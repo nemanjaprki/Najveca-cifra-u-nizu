@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+  <meta charset="UTF-8">
+</head>  
+<body> 
+ 
+     <div id="konzola"></div> 
+
+     <script>  
+     
+     var podaci = [ 
+        [9, 20, 15], 
+        [13, 80, 45], 
+        [30, 63, 52]
+    ];
+
+
+
+    function najveci(mat) { 
+         var max=mat [0] [0];
+
+     for(var i=0; i<mat.length; i++) {
+       for(var j=0; j<mat.length; j++) {
+          
+       if(max<mat [i] [j]) {max=mat [i] [j]; }
+
+               
+       }
+    }
+           return max; 
+    } 
+    var r = najveci(podaci); 
+    console.log(r);
+
+     </script>
+
+
+
+
+
+</body>
+ 
+</html>
